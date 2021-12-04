@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/surge-software-solutions/clientlibs"/>
+    <filter root="/apps/surge-software-solutions/components"/>
+    <filter root="/apps/surge-software-solutions/i18n"/>
+</workspaceFilter>

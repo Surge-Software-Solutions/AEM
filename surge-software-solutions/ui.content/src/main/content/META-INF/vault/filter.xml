@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/surge-software-solutions" mode="merge"/>
+    <filter root="/content/surge-software-solutions" mode="merge"/>
+    <filter root="/content/dam/surge-software-solutions" mode="merge"/>
+    <filter root="/content/experience-fragments/surge-software-solutions" mode="merge"/>
+</workspaceFilter>
