@@ -37,8 +37,8 @@ import java.util.Optional;
 @Model(adaptables = Resource.class)
 public class HelloWorldModel {
 
-    @ValueMapValue(name=PROPERTY_RESOURCE_TYPE, injectionStrategy=InjectionStrategy.OPTIONAL)
-    @Default(values="No resourceType")
+    @ValueMapValue(name = PROPERTY_RESOURCE_TYPE, injectionStrategy = InjectionStrategy.OPTIONAL)
+    @Default(values = "No resourceType")
     protected String resourceType;
 
     @OSGiService
@@ -50,6 +50,8 @@ public class HelloWorldModel {
 
     private String message;
 
+    public String hello;
+
     @PostConstruct
     protected void init() {
         PageManager pageManager = resourceResolver.adaptTo(PageManager.class);
@@ -58,9 +60,9 @@ public class HelloWorldModel {
                 .map(Page::getPath).orElse("");
 
         message = "Hello World!\n"
-            + "Resource type is: " + resourceType + "\n"
-            + "Current page is:  " + currentPagePath + "\n"
-            + "This is instance: " + settings.getSlingId() + "\n";
+                + "Resource type is: " + resourceType + "\n"
+                + "Current page is:  " + currentPagePath + "\n"
+                + "This is instance: " + settings.getSlingId() + "\n";
     }
 
     public String getMessage() {
