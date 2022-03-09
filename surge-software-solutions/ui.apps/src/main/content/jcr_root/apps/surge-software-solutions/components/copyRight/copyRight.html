@@ -1,0 +1,7 @@
+<div data-sly-use.redesignedCopyright="com.surge.core.models.Copyright">
+  <div>${redesignedCopyright.copyrightText}</div>
+
+  <div data-sly-list.copy="${redesignedCopyright.policyLinks}">
+    <a href="${copy.linkUrl}">${copy.linkText}</a>
+  </div>
+</div>
